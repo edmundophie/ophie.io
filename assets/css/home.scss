@@ -13,7 +13,11 @@
 	main {
 		#menu {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
+
+			a {
+				padding: 10px 0;
+			}
 		}
 	}
 }
@@ -90,5 +94,5 @@ hr {
     border-bottom: 1px solid $siimple-default-primary;
     max-width: 48px;
     margin-left: 0;
-    // opacity: 0.4;
+    opacity: 0.5;
 }
