@@ -1,3 +1,86 @@
+@import "typography";
+// @import "github";
+
+$siimple-default-primary: #13A4F2;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(0,0,0,.84);
+  font-style: normal;
+  padding: 0 6%;
+  // background: rgb(247, 247, 248);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+h1 {
+  font-weight: 500;
+  margin: .67rem 0;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  color: #6a737d;
+  font-size: 1.7rem;
+}
+
+a:link, a:visited {
+  color: $siimple-default-primary;
+  border-bottom: 1px dotted $siimple-default-primary;
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre code {
+  padding: 1rem;
+  border: none;
+  border-left: 4px solid $siimple-default-primary;
+  width: 100%;
+  display: block;
+}
+
 .isActive {
   font-weight: bold;
 }
+
