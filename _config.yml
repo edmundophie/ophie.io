@@ -1,4 +1,4 @@
-baseurl: /ophie.io
+baseurl: "/ophie.io"
 
 collections:
   projects:
