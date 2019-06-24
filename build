@@ -1,5 +1,5 @@
 #!/bin/bash
 
 rm -rf docs/*
-jekyll build
+bundle exec jekyll build
 cp -R _site/. docs/
