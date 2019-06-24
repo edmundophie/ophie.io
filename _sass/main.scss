@@ -80,6 +80,11 @@ pre code {
   display: block;
 }
 
+blockquote {
+  border-left: 4px solid $siimple-default-primary;
+  padding-left: 35px;
+}
+
 .isActive {
   font-weight: bold;
 }
