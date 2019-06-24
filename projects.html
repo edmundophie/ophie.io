@@ -6,7 +6,7 @@ title: projects
 <ul>
   {% for project in site.projects %}
     <li>
-      <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+      <h2><a href="{{site.baseurl}}{{ project.url }}">{{ project.name }}</a></h2>
       <h3>{{ project.stack }}</h3>
     </li>
   {% endfor %}

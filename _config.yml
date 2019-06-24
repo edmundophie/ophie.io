@@ -1,3 +1,5 @@
+baseurl: /ophie.io
+
 collections:
   projects:
     output: true
