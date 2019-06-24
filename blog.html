@@ -1,13 +1,90 @@
 ---
-title: blog
+layout: null
 ---
-<h1>Blog</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css">
+</head>
+
+<body>
+    <nav id="nav-menu-wrapper-full">
+        <div id="nav-menu-wrapper">
+            <div id="site-name">
+                <a href="{{site.baseurl}}/">
+                    <div><span id="logo">&#x276E;&#xb7;&#x276F;</span><span id="letter">OPHIE</span></div>
+                </a>
+            </div>
+            <div id="nav-menu">
+                {% for item in site.data.navigation %}
+                <a href="{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %}class="isActive"
+                    {% endif %}>{{ item.name }}</a>
+                {% endfor %}
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </nav>
+    <main>
+        {% for i in site.data.navigation %}
+        <article>
+            <div class="post">
+                <h1 class="title"><a href="#">consectetur adipiscing elit</a></h1>
+                <time><small>26 May 2017 15:32</small></time>
+
+                <div class="excerpt">
+                    <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
+                        incididunt ut
+                        labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
+                            nostrud</strong> exercitation
+                        ullamco
+                        laboris nisi ut
+                        aliquip <code>ex ea commodo</code> consequat exercitation <a href="#">ullamco laboris</a> nisi
+                        ut
+                        exercitation ullamco laboris nisi ut . . . <a href="#">read more</a></p>
+                    <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
+                        incididunt ut
+                        labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
+                            nostrud</strong> exercitation
+                        ullamco
+                        laboris nisi ut
+                        aliquip <code>ex ea commodo</code> consequat exercitation <a href="#">ullamco laboris</a> nisi
+                        ut
+                        exercitation ullamco laboris nisi ut . . . <a href="#">read more</a></p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="post">
+                <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                <time><small>26 May 2017 15:32</small></time>
+
+                <div class="excerpt">
+                    Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
+                    incididunt ut
+                    labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
+                        nostrud</strong> exercitation
+                    ullamco
+                    laboris nisi ut
+                    aliquip <code>ex ea commodo</code> consequat exercitation <a href="#">ullamco laboris</a> nisi
+                    ut
+                    exercitation ullamco laboris nisi ut . . . <a href="#">read more</a>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </main>
+    <section id="pagination-wrapper">
+        <div id="pagination">
+            <a href="#">&#x2039;<strong> newer posts</strong></a> <span id="mid-div">&#183;</span> <a
+                href="#"><strong>older posts </strong>&#x203A;</a>
+        </div>
+    </section>
+</body>
+
+</html>

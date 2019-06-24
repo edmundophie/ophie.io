@@ -34,7 +34,7 @@
 			display: flex;
 	
 			#description {
-					max-width: 450px;
+					max-width: 500px;
 					padding-right: 20px;
 					border-right: 1px solid $siimple-default-primary;
 			}
@@ -44,10 +44,32 @@
 					height: inherit;
 					// display: flex;
 					flex-direction: column;
-					flex-grow: 100;
+					// flex-grow: 100;
 					justify-content: space-evenly;
 			}
+
+			#leftover {
+				flex-flow: 100;
+			}
 	}
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	border: none !important;
+	margin: 0;
+	font-weight: 500;
+	font-family: 'Courier New', Courier, monospace;
+	font-size:6rem;
+
+	#logo {
+		letter-spacing: -0.5rem;
+	}
+}
+
+body {
+  padding: 0 6%;
 }
 
 header {
@@ -73,6 +95,7 @@ main {
 				margin: 0;
 				text-decoration: none;
 				border: none;
+        font-family: 'Courier New', Courier, monospace;
 		}
 	}
 }

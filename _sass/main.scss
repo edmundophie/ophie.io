@@ -3,7 +3,7 @@
 
 $siimple-default-primary: #13A4F2;
 
-* {
+*, *::after, *::before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -17,9 +17,9 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.4;
-  color: rgba(0,0,0,.84);
   font-style: normal;
-  padding: 0 6%;
+  margin: 0;
+  margin-bottom: 3rem;
   // background: rgb(247, 247, 248);
 }
 
@@ -70,14 +70,15 @@ pre {
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-pre code {
-  padding: 1rem;
-  border: none;
-  border-left: 4px solid $siimple-default-primary;
-  width: 100%;
-  display: block;
+  font-size: 1.2rem;
+  code {
+    padding: 1.6rem;
+    border: none;
+    border-left: 4px solid $siimple-default-primary;
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+  }
 }
 
 blockquote {
@@ -86,6 +87,7 @@ blockquote {
 }
 
 .isActive {
-  font-weight: bold;
+  // font-weight: bold;
+  color: black !important;
 }
 
