@@ -9,40 +9,39 @@ layout: null
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edmund Ophie</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/home.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
 </head>
 
-<body>
-    <header>
-        <a href="#"><span id="logo">&#x276E;&#xb7;&#x276F;</span></a>
-        <h1>
+<body class="home">
+    <header class="home__header">
+        <a href="#" class="logo logo--clickable header__logo"><span>&#x276E;&#xb7;&#x276F;</span></a>
+        <h1 class="header__title">
             Edmund Ophie
             <br />
-            <i>software engineer</i>
+            <span class="header__subtitle">software engineer</span>
         </h1>
     </header>
-    <main id="middle">
+    <main class="home__content">
         <div>
-            <hr>
-            <div id="description" style="font-style:italic">
+            <hr class="content__divider">
+            <div class="content__main">
                 <p>&#10077;Aku bukanlah matahari, yang sanggup menyinari seluruh bumi. Tapi aku juga bukan manusia
                     apatis yang bertakut kepada nasib.</p>
                 <p>Aku memlih untuk tidak mengutuki kegelapan dan percaya bisa menjadi lilin yang memberikan
                     seberkas terang bagi setitik sudut ruangan.&#10078;</p>
                 <cite><small>&#8212; Mahameru, 28 Juli 2014 06:14</small></cite>
             </div>
-            <hr>
+            <hr class="content__divider">
         </div>
-        <div id="menu">
-            <a href="{{site.baseurl}}/blog.html">Blog</a>
-            <a href="{{site.baseurl}}/projects.html">Projects</a>
-            <a href="{{site.baseurl}}/about.html">About</a>
+        <div class="main__menu">
+            <a class="menu__item link" href="{{site.baseurl}}/blog.html">Blog</a>
+            <a class="menu__item link" href="{{site.baseurl}}/projects.html">Projects</a>
+            <a class="menu__item link" href="{{site.baseurl}}/about.html">About</a>
         </div>
-        <div id="leftover"></div>
     </main>
-    <section id="contact-box">
-        <div><a href="mailto:edmund@ophie.io">edmund@ophie.io</a></div>
-        <!-- <div><a href="https://id.linkedin.com/in/edmund-ophie-369618b1">LinkedIn</a></div> -->
+    <section id="contact-box" class="home__contact">
+        <div><a class="contact__item link link--decorated" href="mailto:edmund@ophie.io">edmund@ophie.io</a></div>
+        <!-- <div><a class="link link--decorated" href="https://id.linkedin.com/in/edmund-ophie-369618b1">LinkedIn</a></div> -->
     </section>
 </body>
 

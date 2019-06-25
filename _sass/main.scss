@@ -2,6 +2,7 @@
 // @import "github";
 
 $siimple-default-primary: #13A4F2;
+$menu-item-font-family: 'Courier New', Courier, monospace;
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -58,10 +59,14 @@ h6 {
   font-size: 1.7rem;
 }
 
-a:link, a:visited {
+.link {
   color: $siimple-default-primary;
-  border-bottom: 1px dotted $siimple-default-primary;
   text-decoration: none;
+  margin: 0;
+}
+
+.link--decorated {
+  border-bottom: 1px dotted $siimple-default-primary;
 }
 
 pre {

@@ -13,22 +13,7 @@ layout: null
 </head>
 
 <body>
-    <nav id="nav-menu-wrapper-full">
-        <div id="nav-menu-wrapper">
-            <div id="site-name">
-                <a href="{{site.baseurl}}/">
-                    <div><span id="logo">&#x276E;&#xb7;&#x276F;</span><span id="letter">OPHIE</span></div>
-                </a>
-            </div>
-            <div id="nav-menu">
-                {% for item in site.data.navigation %}
-                <a href="{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %}class="isActive"
-                    {% endif %}>{{ item.name }}</a>
-                {% endfor %}
-            </div>
-            <div style="clear:both"></div>
-        </div>
-    </nav>
+    {% include navigation.html %}
     <main>
         {% for i in site.data.navigation %}
         <article>
