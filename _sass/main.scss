@@ -21,16 +21,22 @@ body {
   line-height: 1.4;
   font-style: normal;
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  letter-spacing: -.003em;
+  color: $text-color-primary;
   // background: rgb(247, 247, 248);
 }
 
-h1, h2, h3, h4, h5, h6 {
+.heading {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   font-weight: 600;
   line-height: 1.25;
   margin-bottom: 16px;
   margin-top: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .heading
 }
 
 h1 {
@@ -94,4 +100,8 @@ pre {
 blockquote {
   border-left: 4px solid $siimple-default-primary;
   padding-left: 35px;
+}
+
+.block {
+  display: block;
 }

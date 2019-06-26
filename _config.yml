@@ -10,12 +10,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+#   - scope:
+#       path: ""
+#       type: "projects"
+#     values:
+#       layout: "project"
+#   - scope:
+#       path: ""
+#     values:
+#       layout: "default"
