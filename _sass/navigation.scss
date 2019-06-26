@@ -1,84 +1,89 @@
+@media screen and (max-width: 500px) {
+  .nav__bar {
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .nav__bar {
+    padding: 1rem 0;
+
+  }
+}
+
 @media screen and (max-width: 767px) {
-  #letter {
+  .nav__site-name {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #nav-menu-wrapper {
-    margin: auto;
+  .container {
     max-width: 70%;
   }
 }
 
 @media screen and (min-width: 960px) {
-  #nav-menu-wrapper {
-    margin: auto;
+  .container {
     max-width: 50%;
   }
 }
 
-#letter {
+.container--centered {
+  margin: auto;
+}
+
+.nav__bar {
+  display: flex;
+  border-bottom: 1px #e1e4e8 solid !important;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: -0.5rem;
+  font-family: $menu-item-font-family;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.logo--clickable {
+  text-decoration: none;
+  border: none !important;
+  color: $siimple-default-primary;
+}
+
+.site-name {
+  font-family: $menu-item-font-family;
+  font-size: 3rem;
+}
+
+.nav__site-name {
+  padding: 0 1rem;
   position: relative;
   bottom: -2px;
 }
 
-#nav-menu-wrapper-full {
-  border-bottom: 1px #e1e4e8 solid !important;
+.nav__menu {
+  flex-grow: 100;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#nav-menu-wrapper {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.4rem;
-  line-height: 1.5;
-  height: 100%;
-  display: flex;
-  padding: 2.5rem 0;
+.menu__item {
+	text-decoration: none;
+	font-family: $menu-item-font-family;
+}
 
-  #site-name {
-    font-size: 3rem;
+.menu__item--hoverable:hover {
+  color:$menu-active-color;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-      border: none;
-      margin: 0;
-      font-weight: 500;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 3rem;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
+.menu__item--right {
+    padding: 0 1rem;
+}
 
-      #logo {
-        letter-spacing: -0.5rem;
-        padding: 0 1rem 0 0;
-      }
-
-      #letter {
-        padding: 0 1rem;
-      }
-    }
-  }
-
-  #nav-menu {
-    flex-grow: 100;
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    a {
-      text-decoration: none;
-      color: $siimple-default-primary;
-      border: none;
-      margin: 0;
-      padding: 0 1rem;
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    a:hover {
-      color: black !important;
-    }
-  }
+.menu__item--active {
+  color: $menu-active-color !important;
 }

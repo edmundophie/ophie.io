@@ -3,13 +3,13 @@
 /**
  source: https://github.com/lucagez/medium.css/
  **/
-
+$text-color-primary: rgba(0, 0, 0, 0.84);
 p,
 i,
 a,
 .first-letter,
 .authorName a {
-  color: rgba(0, 0, 0, 0.84);
+  color: $text-color-primary;
   text-rendering: optimizeLegibility;
 }
 

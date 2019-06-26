@@ -1,7 +1,8 @@
 
 @media screen and (max-width: 499px) {
-	.home__header {
-		padding: 36px 0 0 0;
+	.header__logo {
+		display: block;
+		margin-top: 2.5rem;
 	}
 
 	.main__menu {
@@ -9,15 +10,11 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
-	.menu__item {
-		padding: 1rem 0;
-	}
 }
 
 @media screen and (min-width: 500px) {
 		.home__header {
-			padding: 76px 0 0 0;
+			padding: 7.6rem 0 0 0;
 		}
 		
 		.home__content {
@@ -31,10 +28,11 @@
 		}
 
 		.main__menu {
-			padding-left: 2rem;
+			padding: 0 2rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
+			margin-left: 1rem;
 		}
 }
 
@@ -46,27 +44,17 @@
 	margin-bottom: 2.5rem;
 }
 
-.logo {
-	letter-spacing: -0.5rem;
-	font-family: 'Courier New', Courier, monospace;
-	margin: 0;
-	font-weight: 500;
-	color: black;
-	letter-spacing: -0.5rem;
-}
 
-.logo--clickable {
-	text-decoration: none;
-	border: none !important;
-	color: $siimple-default-primary;
-}
+
+// .logo {
+	// letter-spacing: -0.5rem;
+	// font-family: $menu-item-font-family;
+	// margin: 0;
+	// color: black;
+// }
 
 .header__logo {
 	font-size:6rem;
-}
-
-.nav__logo {
-	font-size: 3rem;
 }
 
 .header__title {
@@ -92,12 +80,6 @@
 	margin: 2.5rem 0;
 	text-align: justify;
 	font-style: italic;
-}
-
-.menu__item {
-	text-decoration: none;
-	font-family: $menu-item-font-family;
-	padding: 0 1rem;
 }
 
 .content__divider {

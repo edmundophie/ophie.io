@@ -3,6 +3,7 @@
 
 $siimple-default-primary: #13A4F2;
 $menu-item-font-family: 'Courier New', Courier, monospace;
+$menu-active-color:black;
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -65,6 +66,10 @@ h6 {
   margin: 0;
 }
 
+.uncolored {
+  color: black;
+}
+
 .link--decorated {
   border-bottom: 1px dotted $siimple-default-primary;
 }
@@ -90,9 +95,3 @@ blockquote {
   border-left: 4px solid $siimple-default-primary;
   padding-left: 35px;
 }
-
-.isActive {
-  // font-weight: bold;
-  color: black !important;
-}
-
