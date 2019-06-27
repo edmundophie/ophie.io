@@ -34,9 +34,14 @@ layout: null
             <hr class="content__divider">
         </div>
         <div class="main__menu">
-            <a class="menu__item link" href="{{site.baseurl}}/blog.html">Blog</a>
-            <a class="menu__item link" href="{{site.baseurl}}/projects.html">Projects</a>
-            <a class="menu__item link" href="{{site.baseurl}}/about.html">About</a>
+			{% for item in site.data.navigation %}
+            <a class="menu__item link" href="{{site.baseurl}}{{item.link}}">{{item.name}}</a>
+            {% endfor %}
+
+            <!-- <a class="menu__item link" href="{{site.baseurl}}/blog.html">Blog</a> -->
+            <!-- <a class="menu__item link" href="{{site.baseurl}}/projects.html">Projects</a> -->
+            <!-- <a class="menu__item link" href="{{site.baseurl}}/about.html">About</a> -->
+
         </div>
     </main>
     <section class="home__contact">

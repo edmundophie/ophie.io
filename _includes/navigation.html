@@ -1,17 +1,19 @@
-<header class="nav__bar">
-	<div>
-		<a href="{{site.baseurl}}/" class="link uncolored">
-			<div class="nav__brand"><span class="logo">&#x276E;&#xb7;&#x276F;</span><span
-					class="site-name nav__site-name">OPHIE</span></div>
-		</a>
-	</div>
-	<nav class="nav__menu">
-		{% for item in site.data.navigation %}
-		<a class="menu__item link 
+<div class="nav">
+	<header class="nav__bar container container--centered">
+		<div>
+			<a href="{{site.baseurl}}/" class="link uncolored">
+				<div class="nav__brand"><span class="logo">&#x276E;&#xb7;&#x276F;</span><span
+						class="site-name nav__site-name">OPHIE</span></div>
+			</a>
+		</div>
+		<nav class="nav__menu">
+			{% for item in site.data.navigation %}
+			<a class="menu__item link 
                 menu__item--right 
                 menu__item--hoverable 
                 {% if page.url == item.link %}menu__item--active{% endif %}"
-			href="{{site.baseurl}}{{ item.link }}">{{ item.name }}</a>
-		{% endfor %}
-	</nav>
-</header>
+				href="{{site.baseurl}}{{ item.link }}">{{ item.name }}</a>
+			{% endfor %}
+		</nav>
+	</header>
+</div>

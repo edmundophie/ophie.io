@@ -1,67 +1,24 @@
-<main class="content">
-  {% for post in site.posts %}
-  <article class="blog__post">
-    <a href="{{site.baseurl}}{{post.url}}" class="link uncolored post__title blog__title">{{post.title}}</a>
-    <time class="post__time blog__time"><small>{{ post.date | date_to_string }}</small> <span id="mid-div" class="pagination__divider">&#183;</span> <small>{{ post.category | downcase }}</small></time>
+{% for post in site.posts %}
+<article class="blog__post">
+  <a href="{{site.baseurl}}{{post.url}}" class="link uncolored post__title blog__title">{{post.title}}</a>
+  <time class="post__time blog__time"><small>{{ post.date | date_to_string }}</small> <span id="mid-div"
+      class="pagination__divider">&#183;</span> <small>{{ post.category | downcase }}</small></time>
 
-    <div class="post__excerpt">
-      <div class="post__spacer"></div>
-      {{post.excerpt}}
-      {% if post.excerpt != post.content %}
-      . . . <a href="{{site.baseurl}}{{post.url}}" class="link link--decorated">read more</a>
-      {% endif %}
-      <!-- <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
-        incididunt ut
-        labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
-          nostrud</strong> exercitation
-        ullamco
-        laboris nisi ut
-        aliquip <code>ex ea commodo</code> consequat exercitation <a href="#" class="link link--decorated">ullamco
-          laboris</a>
-        nisi
-        ut
-        exercitation ullamco laboris nisi ut . . . <a href="#" class="link link--decorated">read more</a></p>
-      <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
-        incididunt ut
-        labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
-          nostrud</strong> exercitation
-        ullamco
-        laboris nisi ut
-        aliquip <code>ex ea commodo</code> consequat exercitation <a href="#" class="link link--decorated">ullamco
-          laboris</a>
-        nisi
-        ut
-        exercitation ullamco laboris nisi ut . . . <a href="#" class="link link--decorated">read more</a></p> -->
-    </div>
-  </article>
+  <div class="post__excerpt">
+    <div class="post__spacer"></div>
+    {{post.excerpt}}
+    {% if post.excerpt != post.content %}
+    . . . <a href="{{site.baseurl}}{{post.url}}" class="link link--decorated">read more</a>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}
 
-  <!-- <article class="blog__post">
-    <a href="#" class="link uncolored post__title blog__title">consectetur adipiscing elit</a>
-    <time class="post__time blog__time"><small>26 May 2017 15:32</small></time>
-
-    <div class="post__excerpt">
-      <div class="post__spacer"></div>
-
-      Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor
-      incididunt ut
-      labore et <small>dolore</small> magna aliqua. Ut enim ad minim veniam, <strong>quis
-        nostrud</strong> exercitation
-      ullamco
-      laboris nisi ut
-      aliquip <code>ex ea commodo</code> consequat exercitation <a href="#" class="link link--decorated">ullamco
-        laboris</a>
-      nisi
-      ut
-      exercitation ullamco laboris nisi ut . . . <a href="#" class="link link--decorated">read more</a>
-    </div>
-  </article> -->
-  {% endfor %}
-
-  <section>
-    <div id="pagination">
-      <a href="#" class="pagination__link link uncolored">&#x2039;<strong> newer posts</strong></a>
-      <span id="mid-div" class="pagination__divider">&#183;</span>
-      <a href="#" class="pagination__link link uncolored"><strong>older posts </strong>&#x203A;</a>
-    </div>
-  </section>
+<!-- <section>
+  <div id="pagination">
+    <a href="#" class="pagination__link link uncolored">&#x2039;<strong> newer posts</strong></a>
+    <span id="mid-div" class="pagination__divider">&#183;</span>
+    <a href="#" class="pagination__link link uncolored"><strong>older posts </strong>&#x203A;</a>
+  </div>
+</section> -->
 </main>

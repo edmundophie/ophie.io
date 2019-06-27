@@ -1,0 +1,17 @@
+---
+layout: default
+title: About me
+---
+
+<article class="blog__post">
+  <h1 class="uncolored post__title">{{page.title}}</h1>
+
+  <div class="post__content">
+    <div class="post__spacer"></div>
+
+    {% capture my_include %}{% include about.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+    
+  </div>
+</article>
+</div>

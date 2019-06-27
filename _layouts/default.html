@@ -10,14 +10,17 @@
 </head>
 
 <body>
-  <div class="container container--centered">
-    {% include navigation.html %}
+  {% include navigation.html %}
 
-    {% if page.html_content %}
-    {% include {{ page.html_content }} %}
-    {% endif %}
+  <div class="container container--centered container__after-nav">
+    <main class="content">
 
-    {{ content }}
+      {% if page.html_content %}
+      {% include {{ page.html_content }} %}
+      {% endif %}
+
+      {{ content }}
+    </main>
   </div>
 
 </body>

@@ -3,8 +3,23 @@
   .content {
     padding: 0 4%;
   }
+  
+  .post__title {
+    font-size: 3.4rem;
+  }
+
+  .post__excerpt, .post__content {
+    text-align: justify;
+    letter-spacing: -.004em;
+    font-size: 1.8rem;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .post__title {
+    font-size: 4rem;
+  }
+}
 
 .blog__post {
   margin-top: 3rem;
@@ -12,7 +27,8 @@
 }
 
 .post__title {
-  @extend h1;
+  font-weight: 400;
+  margin: .67rem 0;
 }
 
 .post__time {
@@ -22,11 +38,7 @@
 
 .post__excerpt, .post__content {
   text-align: justify;
-}
-
-.post__excerpt p {
-  margin-bottom: 0;
-  display: inline;
+  line-height: 1.58;
 }
 
 .post__spacer {
@@ -55,4 +67,9 @@
 
 .pagination__divider {
   vertical-align: middle;
+}
+
+.post__content img{
+    width: 100%;
+    border-radius: 3px;
 }

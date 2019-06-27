@@ -11,6 +11,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .nav__bar {
+    padding-left:4%;
+    padding-right:4%;
+  }
+  
   .nav__site-name {
     display: none;
   }
@@ -28,13 +33,21 @@
   }
 }
 
+.container__after-nav {
+  margin-top: 3rem;
+}
+
 .container--centered {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  border-bottom: 1px #e1e4e8 solid !important;
 }
 
 .nav__bar {
   display: flex;
-  border-bottom: 1px #e1e4e8 solid !important;
 }
 
 .logo {

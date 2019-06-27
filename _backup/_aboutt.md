@@ -1,5 +1,6 @@
 ---
-tilte: about
+title: about me
+layout: default
 ---
 
 # About me
