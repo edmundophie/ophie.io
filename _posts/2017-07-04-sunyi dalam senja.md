@@ -3,7 +3,7 @@ author: Edmund
 category: Tumpahan Pikir
 ---
 
-Ada kalanya sunyi di dalam senja
-Terasa seperti nirwana di dunia fana
-Mungkin semua karena terungku maya
-Oleh tumpahnya air dari angkasa
+Ada kalanya sunyi di dalam senja  
+Terasa seperti nirwana di dunia fana  
+Mungkin semua karena terungku maya  
+Oleh tumpahnya air dari angkasa  
