@@ -9,10 +9,10 @@
   .content {
     padding: 0 4%;
   }
-  
-  .post__title {
-    font-size: 1.8rem;
-    line-height: 2rem;
+
+  .page__title {
+    font-size: 3.4rem;
+    margin: 2rem 0 0 0 ;
   }
 
   .post__excerpt, .post__content {
@@ -22,15 +22,14 @@
   }
 
   .blog__post {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .post__title {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+  .page__title {
+    font-size: 4rem;
+    margin: 3.5rem 0 0 0 ;
   }
 
   .blog__post {
@@ -39,10 +38,17 @@
   }
 }
 
+.page__title {
+  font-weight: 400;
+  line-height: 1.25;
+}
+
 .post__title {
   font-weight: 600;
-  letter-spacing: -0.042rem;
+  letter-spacing: -0.032rem;
   font-family: $heading-font-family;
+  font-size: 2.1rem;
+  line-height: 2.4rem;
 }
 
 .post__time {
