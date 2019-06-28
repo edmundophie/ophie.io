@@ -1,11 +1,12 @@
 {% for post in site.posts %}
 <article class="blog__post">
   <a href="{{site.baseurl}}{{post.url}}" class="link uncolored post__title blog__title">{{post.title}}</a>
-  <time class="post__time blog__time"><small>{{ post.date | date_to_string }}</small> <span id="mid-div"
-      class="pagination__divider">&#183;</span> <small>{{ post.category | downcase }}</small></time>
+  
+  <time class="post__time blog__time">{{ post.date | date_to_string }}</small> <span id="mid-div"
+      class="pagination__divider">&#183;</span> {{ post.category | downcase }}</small></time>
 
   <div class="post__excerpt">
-    <div class="post__spacer"></div>
+    <!-- <div class="post__spacer"></div> -->
     {{post.excerpt}}
     <!-- {% if post.excerpt != post.content %}
     . . . <a href="{{site.baseurl}}{{post.url}}" class="link link--decorated">read more</a>
