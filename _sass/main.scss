@@ -89,6 +89,7 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
   font-size: 1.2rem;
   code {
+    background: transparent;
     padding: 1.6rem;
     border: none;
     border-left: 4px solid $siimple-default-primary;
