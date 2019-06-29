@@ -7,11 +7,17 @@
   .post__excerpt {
     display: none;
   }
+
+  .post__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 }
 
 @media screen and (min-width: 500px) {
   .post__title {
-    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -22,7 +28,15 @@
 
   .page__title {
     font-size: 3.4rem;
-    margin: 2rem 0 3rem 0 ;
+  }
+
+  .page__title--blog {
+    margin-bottom: 3rem;
+  }
+
+
+  .page__title--post, .page__title--blog {
+    margin-top: 2rem;
   }
 
   .post__excerpt, .post__content {
@@ -42,6 +56,14 @@
     margin: 3.5rem 0 4rem 0 ;
   }
 
+  .page__title--blog {
+    margin-bottom:4rem;
+  }
+
+  .page__title--post, .page__title--blog {
+    margin-top: 3.5rem;
+  }
+
   .blog__post {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -53,11 +75,14 @@
   line-height: 1.25;
 }
 
+.page__title--post {
+  margin-bottom: 0;
+}
+
 .post__title {
   letter-spacing: -0.032rem;
-  font-family: $heading-font-family;
-  font-size: 2.1rem;
-  line-height: 2.4rem;
+  font-family: "Lora";
+  font-weight: 600;
 }
 
 .post__time {
