@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git add .
-randomId=$((RANDOM % 10000))
-git commit -m "auto commit #$randomId"
+timestamp= "$(date +%s)"
+git commit -m "auto commit #$timestamp"
 git push
 
