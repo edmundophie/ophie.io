@@ -1,6 +1,6 @@
 ---
 author: Edmund
-category: Softare Engineering
+category: Software Engineering
 excerpt: This website was built as an effort to revamp my previous blog
 ---
 
@@ -21,7 +21,7 @@ I want something that is simple but yet easily customized from design and layout
 
 ## Solution
 First thing comes to my mind is to use just a vanila html. As for the styling, I planned to use some really minimalist css framework [chota](https://jenil.github.io/chota/) or [siimple css](https://docs.siimple.xyz/index.html).   
-But, I ended up creating my own styleguide from scratch because I found that none of those frameworks styling match my taste. My goal is to create a blog that is very convenient and friendly for readers. That's why my website typography is heavily influenced by **Medium** typeface and **Github** markdown flavor.  I've always considered both of those websites are amongst the best in term of how friendly they are presenting `code-intensive` articles.  
+But, I ended up creating my own styleguide from scratch because I found that none of those frameworks styling match my taste. My goal is to create a blog that is very convenient and friendly for readers. That's why my website typography is heavily influenced by **Medium** typeface and **Github** markdown flavor.  I've always considered both of those websites are amongst the best in term of how friendly they are in presenting `code-intensive` articles.  
 
 The fact that I need to create a styleguide from scratch initially scares me because originally my main background has always been on the backend side. But oh boy, do I wrong, I ended up relearning a lot of things about CSS like [BEM](https://getbem.com), [SMACSS](https://smacss.com) and [sass](https://sass-lang.com). By using BEM, it makes the CSS more structured, readable, and debugable. My nightmare about debugging css is over after I learn about BEM.  
 
@@ -37,5 +37,5 @@ In total, I spent about one and a half week to accomplish this blog, and I do it
 * Utilize BEM for `css`
 * Use sass for easier `css` writing
 * Use `travis` as it's free for public repo
-* Static html is waaay much faster than all of those CSR (client side rendering) and SPA websites
+* Static html is waaaay much faster than all of those CSR (client side rendering) and SPA websites
 * If static html is not possible, use SSR with hydration for better performance than CSR
