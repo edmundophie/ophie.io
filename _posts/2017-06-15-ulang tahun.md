@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Software Engineering
+excerpt: Aku memang bukan malaikat   
 ---
 
 Aku memang bukan malaikat   

@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Matahari pagi
 ---
 
 Matahari pagi,  

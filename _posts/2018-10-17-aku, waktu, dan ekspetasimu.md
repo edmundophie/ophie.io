@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Waktu menggerogoti kita
 ---
 
 Waktu menggerogoti kita  

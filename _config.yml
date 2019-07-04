@@ -1,6 +1,7 @@
 # baseurl: "/"
 # baseurl: "/ophie.io"
 
+excerpt_separator: <!--more-->
 collections:
   projects:
     output: true

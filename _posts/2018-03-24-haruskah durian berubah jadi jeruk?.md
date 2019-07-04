@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Durian memiliki struktur kulit buah yang berduri
 ---
 
 

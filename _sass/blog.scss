@@ -98,6 +98,16 @@
 .post__excerpt, .post__content {
   text-align: justify;
   line-height: 1.58;
+
+  a {
+    color: $siimple-default-primary;
+    text-decoration: none;
+    border-bottom: 1px dotted $siimple-default-primary;
+  }
+
+  a:hover {
+    color: $siimple-default-primary-hover;
+  }
 }
 
 .post__excerpt > p:first-child {

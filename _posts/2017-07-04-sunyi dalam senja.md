@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Ada kalanya sunyi di dalam senja  
 ---
 
 Ada kalanya sunyi di dalam senja  

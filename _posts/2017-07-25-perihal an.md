@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: H+4 pasca wisudaan
 ---
 
 H+4 pasca wisudaan  

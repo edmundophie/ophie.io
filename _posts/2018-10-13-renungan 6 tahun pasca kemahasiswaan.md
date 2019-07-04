@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Oktober ini menandakan sudah 6 tahun lebih sejak pertama kali aku ditahbiskan sebagai mahasiswa
 ---
 
 Oktober ini menandakan sudah 6 tahun lebih sejak pertama kali aku ditahbiskan sebagai mahasiswa.  

@@ -1,6 +1,7 @@
 ---
 author: Edmund
 category: Tumpahan Pikir
+excerpt: Seperti umumnya sebuah tempat ibadah
 ---
 
 Seperti umumnya sebuah tempat ibadah.  

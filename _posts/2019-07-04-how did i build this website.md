@@ -1,14 +1,16 @@
 ---
 author: Edmund
-category: Tumpahan Pikir
+category: Softare Engineering
+excerpt: This website was built as an effort to revamp my previous blog
 ---
 
-![](../assets/images/ophie.io.png)
-
 ## Background
-This website was built as an effort to revamp my previous blog. Previously, my blog was built on top of wordpress and I am not satisfied with it.  
-The fact that I need to use a wordpress just to run a simple blog  doesn't make me happy. I feel it is too heavy, clunky and not so flexible to be customized. 
-I want something that is simple but yet easily customized from design and layout perspective. 
+This website was built as an effort to revamp my previous blog. 
+Previously, my blog was built on top of wordpress and I was not satisfied with it.  
+The fact that I need to use a worsdpress just to run a simple blog  doesn't make me happy. I feel it is too heavy, clunky and not so flexible to be customized. 
+I want something that is simple but yet easily customized from design and layout perspective.   
+
+![]({{site.baseurl}}/assets/images/ophie.io.png)
 
 ## Stack
 * [jekyll]()
@@ -21,7 +23,7 @@ I want something that is simple but yet easily customized from design and layout
 First thing comes to my mind is to use just a vanila html. As for the styling, I planned to use some really minimalist css framework [chota](https://jenil.github.io/chota/) or [siimple css](https://docs.siimple.xyz/index.html).   
 But, I ended up creating my own styleguide from scratch because I found that none of those frameworks styling match my taste. My goal is to create a blog that is very convenient and friendly for readers. That's why my website typography is heavily influenced by **Medium** typeface and **Github** markdown flavor.  I've always considered both of those websites are amongst the best in term of how friendly they are presenting `code-intensive` articles.  
 
-The fact that I need to create a styleguide from scratch initially scares me because originally my main background has always been on the backend side. But oh boy, do I wrong, I ended up relearning a lot of things about CSS like [**BEM**](https://getbem.com), [SMACSS](https://smacss.com) and [**sass**](https://sass-lang.com). By using BEM, it makes the CSS more structured, readable, and debugable. My nightmare about debugging css is over after I learn about BEM.  
+The fact that I need to create a styleguide from scratch initially scares me because originally my main background has always been on the backend side. But oh boy, do I wrong, I ended up relearning a lot of things about CSS like [BEM](https://getbem.com), [SMACSS](https://smacss.com) and [sass](https://sass-lang.com). By using BEM, it makes the CSS more structured, readable, and debugable. My nightmare about debugging css is over after I learn about BEM.  
 
 Because my plan was just to create a real simple blog, after I did some googling, I decided to use [jekyll](https://jekyllrb.com). This framework let me create a blog faster with the built-in template engine called [liquid](https://shopify.github.io/liquid/). The syntax is pretty simple and easy to grasp for a first-timer like me. Another plus of jekyll is that it will compile all of those template engines to a static html on a build-time. In consequence, the webpage can load faster and lighter.
 
