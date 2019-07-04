@@ -355,6 +355,12 @@ blockquote {
 .post__excerpt, .post__content {
   text-align: justify;
   line-height: 1.58; }
+  .post__excerpt a, .post__content a {
+    color: #13A4F2;
+    text-decoration: none;
+    border-bottom: 1px dotted #13A4F2; }
+  .post__excerpt a:hover, .post__content a:hover {
+    color: #0778b4; }
 
 .post__excerpt > p:first-child {
   margin-top: 0rem; }
