@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+  <title>How did i build this website</title>
+</head>
+
+<body>
+  <div class="nav">
+	<header class="nav__bar container container--centered">
+		<div>
+			<a href="/" class="link uncolored">
+				<div class="nav__brand"><span class="logo">&#x276E;&#xb7;&#x276F;</span><span
+						class="site-name nav__site-name">OPHIE</span></div>
+			</a>
+		</div>
+		<nav class="nav__menu">
+			
+			<a class="menu__item link 
+                menu__item--right 
+                menu__item--hoverable 
+                "
+				href="/blog.html">Blog</a>
+			
+			<a class="menu__item link 
+                menu__item--right 
+                menu__item--hoverable 
+                "
+				href="/about.html">About</a>
+			
+		</nav>
+	</header>
+</div>
+
+  <div class="container container--centered container__after-nav">
+    <main class="content">
+
+      
+
+      <article class="blog__post">
+  <!-- <div style="margin-bottom:1rem;">
+    <a href="javascript:void(0)" class="link" onclick="window.history.back()">&#x2039; back</a>
+  </div> -->
+  <h1 class="uncolored page__title page__title--post">How did i build this website</h1>
+  <time class="post__time"><small>04 Jul 2019</small> <span id="mid-div"
+      class="pagination__divider">&#183;</span> <small>tumpahan pikir</small></time>
+
+  <div class="post__content">
+    <div class="post__spacer"></div>
+    <p><img src="../assets/images/ophie.io.png" alt="" /></p>
+
+<h2 id="background">Background</h2>
+<p>This website was built as an effort to revamp my previous blog. Previously, my blog was built on top of wordpress and I am not satisfied with it.<br />
+The fact that I need to use a wordpress just to run a simple blog  doesn’t make me happy. I feel it is too heavy, clunky and not so flexible to be customized. 
+I want something that is simple but yet easily customized from design and layout perspective.</p>
+
+<h2 id="stack">Stack</h2>
+<ul>
+  <li><a href="">jekyll</a></li>
+  <li><a href="https://getbem.com">BEM</a></li>
+  <li><a href="https://sass-lang.com">sass</a></li>
+  <li><a href="https://travis-ci.org">travis</a></li>
+  <li><a href="https://pages.github.com/">github pages</a></li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+<p>First thing comes to my mind is to use just a vanila html. As for the styling, I planned to use some really minimalist css framework <a href="https://jenil.github.io/chota/">chota</a> or <a href="https://docs.siimple.xyz/index.html">siimple css</a>. <br />
+But, I ended up creating my own styleguide from scratch because I found that none of those frameworks styling match my taste. My goal is to create a blog that is very convenient and friendly for readers. That’s why my website typography is heavily influenced by <strong>Medium</strong> typeface and <strong>Github</strong> markdown flavor.  I’ve always considered both of those websites are amongst the best in term of how friendly they are presenting <code class="highlighter-rouge">code-intensive</code> articles.</p>
+
+<p>The fact that I need to create a styleguide from scratch initially scares me because originally my main background has always been on the backend side. But oh boy, do I wrong, I ended up relearning a lot of things about CSS like <a href="https://getbem.com"><strong>BEM</strong></a>, <a href="https://smacss.com">SMACSS</a> and <a href="https://sass-lang.com"><strong>sass</strong></a>. By using BEM, it makes the CSS more structured, readable, and debugable. My nightmare about debugging css is over after I learn about BEM.</p>
+
+<p>Because my plan was just to create a real simple blog, after I did some googling, I decided to use <a href="https://jekyllrb.com">jekyll</a>. This framework let me create a blog faster with the built-in template engine called <a href="https://shopify.github.io/liquid/">liquid</a>. The syntax is pretty simple and easy to grasp for a first-timer like me. Another plus of jekyll is that it will compile all of those template engines to a static html on a build-time. In consequence, the webpage can load faster and lighter.</p>
+
+<p>As the hosting provider, I also found that github pages is a very good match up for <strong>jekyll</strong>. The fact that we could host our own blog for free on github servers blows my mind. Even better, it provides a free and easy to use <code class="highlighter-rouge">https</code> support. You don’t need to worry about scalability and all of those complex stuffs of managing servers. Let the github guys do that for you. All I need to do was just to buy my own domain. Luckily, I already had owned my own domain, <code class="highlighter-rouge">ophie.io</code>, so I need not to do anything extra.</p>
+
+<p>To ensure a smoother development experience, I also utilized <a href="https://travis-ci.org"><strong>travis</strong></a> for CI/CD. It automatically detects every commit I made to github and instantly run a job to build and deploy my website to github pages. Yes, it integrates well with github pages and it is also totally <strong><em>free</em></strong> for public repositories.</p>
+
+<p>In total, I spent about one and a half week to accomplish this blog, and I do it after working hours and on weekend. As for the future, my plan is to try to learn a bit about react by leveraging <a href="https://www.gatsbyjs.org/">gatsbyjs</a>.</p>
+
+<h2 id="lesson-learned">Lesson Learned</h2>
+<ul>
+  <li>Utilize BEM for <code class="highlighter-rouge">css</code></li>
+  <li>Use sass for easier <code class="highlighter-rouge">css</code> writing</li>
+  <li>Use <code class="highlighter-rouge">travis</code> as it’s free for public repo</li>
+  <li>Static html is waaay much faster than all of those CSR (client side rendering) and SPA websites</li>
+  <li>If static html is not possible, use SSR with hydration for better performance than CSR</li>
+</ul>
+
+  </div>
+</article>
+<div style="margin-bottom:1rem;">
+  <a href="javascript:void(0)" class="link" onclick="window.history.back()">&#x2039; back</a>
+</div>
+    </main>
+  </div>
+
+</body>
+
+</html>
