@@ -13,7 +13,7 @@ I want something that is simple but yet easily customized from design and layout
 ![]({{site.baseurl}}/assets/images/ophie.io.png)
 
 ## Stack
-* [jekyll]()
+* [jekyll](https://jekyllrb.com)
 * [BEM](https://getbem.com)
 * [sass](https://sass-lang.com)
 * [travis](https://travis-ci.org)
