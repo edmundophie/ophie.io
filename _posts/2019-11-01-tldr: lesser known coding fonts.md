@@ -1,7 +1,7 @@
 ---
 author: Edmund
 category: Software Engineering
-excerpt: 
+excerpt: Hack is the most popular font at [/r/unixporn](https://reddit.com/r/unixporn)
 ---
 
 # Original Article
@@ -23,3 +23,5 @@ excerpt:
   * The license price quite expensive, **€199**
 * As for the free one, [**Iosevka**](#https://typeof.net/Iosevka/) seems to be the winner.
 * Me personally have been trying out Iosevka for these past few weeks..
+  * My impression so far: **I enjoy it**.
+  * It makes my terminal looks **more spacious**
